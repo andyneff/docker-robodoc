@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  robodoc:
+    build:
+      context: .
+    image: andyneff/robodoc:latest
+  volumes:
+    - ${SRC_DIR}:/src
+    - ${DOC_DIR}:/doc
