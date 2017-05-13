@@ -5,6 +5,6 @@ services:
     build:
       context: .
     image: andyneff/robodoc:latest
-  volumes:
-    - ${SRC_DIR}:/src
-    - ${DOC_DIR}:/doc
+    volumes:
+      - ${SRC_DIR}:/src
+      - ${DOC_DIR}:/doc
