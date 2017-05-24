@@ -4,6 +4,9 @@ services:
   robodoc:
     build:
       context: .
+    environment: 
+      - DOCKER_UID=${DOCKER_UID}
+      - DOCKER_GID=${DOCKER_GID}
     image: andyneff/robodoc:latest
     volumes:
       - ${SRC_DIR}:/src
